@@ -85,10 +85,10 @@ function spiderman()
   if (positions !== false)
   {
     push();
-    const wx = Math.abs(positions[13][0] - positions[1][0]) * 1.2; //face width
-    const wy = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 1.2; // nose to chin
-    translate(-wx/2, -wy/2);
-    image(imgSpidey, positions[62][0], positions[62][1], wx, wy); //center of the face
+    const faceWidth = Math.abs(positions[13][0] - positions[1][0]) * 1.2; //face width
+    const faceHeight = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 1.2; // nose to chin
+    translate(-faceWidth/2, -faceHeight/2);
+    image(imgSpidey, positions[62][0], positions[62][1], faceWidth, faceHeight); //center of the face
     pop();
   }
 }
@@ -97,10 +97,10 @@ function batmanMask(){
   if (positions !== false)
   {
     push();
-    const wx = Math.abs(positions[13][0] - positions[1][0]) * 2; 
-    const wy = Math.abs(positions[7][1] - Math.min(positions[17][1], positions[0][1])) * 1.4; 
-    translate(-wx/2, -wy/1.6);
-    image(imgBatman, positions[33][0], positions[33][1], wx, wy); 
+    const faceWidth = Math.abs(positions[13][0] - positions[1][0]) * 2; 
+    const faceHeight = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[0][1])) * 1.2; 
+    translate(-faceWidth/2, -faceHeight/1.6);
+    image(imgBatman, positions[33][0], positions[33][1], faceWidth, faceHeight); 
     pop();
   }
 }
@@ -110,10 +110,10 @@ function bigMask(){
   if (positions !== false)
   {
     push();
-    const wx = Math.abs(positions[13][0] - positions[1][0]) * 1.2; 
-    const wy = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 1.4;
-    translate(-wx/3.2, -wy/1.9);
-    image(imgMask, positions[27][0], positions[32][1], wx, wy); 
+    const faceWidth = Math.abs(positions[13][0] - positions[1][0]) * 1.3; 
+    const faceHeight = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 1.2;
+    translate(-faceWidth/3.2, -faceHeight/1.9);
+    image(imgMask, positions[27][0], positions[32][1], faceWidth, faceHeight); 
     pop();
   }
 }
@@ -123,10 +123,10 @@ function glassesFilter(){
   if (positions !== false)
   {
     push();
-    const wx = Math.abs(positions[14][0] - positions[1][0]) * 1.2;
-    const wy = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 1.4; 
-    translate(-wx/3, -wy/2.4);
-    image(imgGlasses, positions[27][0], positions[32][1], wx, wy); 
+    const faceWidth = Math.abs(positions[14][0] - positions[1][0]) * 1.2;
+    const faceHeight = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 1.4; 
+    translate(-faceWidth/3, -faceHeight/2.4);
+    image(imgGlasses, positions[27][0], positions[32][1], faceWidth, faceHeight); 
     pop();
   }
 
@@ -149,6 +149,6 @@ function windowResized()
   const maxWidth = Math.min(windowWidth, windowHeight);
   pixelDensity(1);
   outputWidth = maxWidth;
-  outputHeight = maxWidth / 1.5; 
+  outputHeight = maxWidth / 1.2; 
   resizeCanvas(outputWidth, outputHeight);
 }
