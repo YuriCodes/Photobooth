@@ -97,8 +97,8 @@ function batmanMask(){
   if (positions !== false)
   {
     push();
-    const faceWidth = Math.abs(positions[13][0] - positions[1][0]) * 2.2; 
-    const faceHeight = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[0][1])) * 1.2; 
+    const faceWidth = Math.abs(positions[13][0] - positions[1][0]) * 2.5; 
+    const faceHeight = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[0][1])) * 1.5; 
     translate(-faceWidth/2, -faceHeight/1.6);
     image(imgBatman, positions[33][0], positions[33][1], faceWidth, faceHeight); 
     pop();
