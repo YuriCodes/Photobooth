@@ -1,3 +1,3 @@
 # Photobooth Made using facial recognition 
 
-Live ver: https://wonderful-bardeen-f2f4a2.netlify.app/
+Live ver: https://photoboothproject.netlify.app/
