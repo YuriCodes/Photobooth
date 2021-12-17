@@ -148,7 +148,7 @@ function windowResized()
 {
   const maxWidth = Math.min(windowWidth, windowHeight);
   pixelDensity(1);
-  outputWidth = maxWidth;
+  outputWidth = maxWidth / 1.2;
   outputHeight = maxWidth / 1.2; 
   resizeCanvas(outputWidth, outputHeight);
 }

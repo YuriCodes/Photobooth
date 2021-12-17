@@ -86,12 +86,23 @@ canvas{
         margin-left: 20px;
         margin-right: 20px;
     }
-    canvas{
-        min-width: 100vw;
-    }
     button, select{
         width: 80vw;
         margin-left: 60px;
     }
 
 }
+
+@media (max-width: 1024px) and (orientation: landscape){ 
+    body:after{
+      position: absolute;
+      z-index: 9999;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      content: "";
+      background: #212121 url(http://i.stack.imgur.com/sValK.png) 0 0 no-repeat; /* replace with an image that tells the visitor to rotate the device to portrait mode */
+      background-size: 100% auto;
+      opacity: 0.95;
+    }
+  }
