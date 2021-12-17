@@ -1,0 +1,97 @@
+html, body{
+ height: 100%;
+}
+
+body{ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Readex Pro', sans-serif;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    margin-top: -15px;
+}
+h1, p{
+    text-align: center;
+}
+h1{
+    font-weight: 700;
+    font-size: 3em;
+}
+
+p{
+    font-weight: 300;
+    font-size: 1.8em;
+    margin-top: -15px;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    padding: 15px;
+    border-color: transparent;
+    box-shadow: 1px 1px 10px #66553f;
+    border-radius: 20px;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(22, 61, 25);
+    box-shadow: 1px 13px 10px #00ff4c;
+    color: white;
+}
+select{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px #66553f;
+    padding: 5px;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 1.5em;
+    font-family: 'Readex Pro', sans-serif;
+
+}
+select:hover{
+    cursor: pointer;
+}
+canvas{
+    margin: 0;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.header{
+    display: block;
+    margin-top: -500px;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.5em;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    canvas{
+        min-width: 100vw;
+    }
+    button, select{
+        width: 80vw;
+        margin-left: 60px;
+    }
+
+}
